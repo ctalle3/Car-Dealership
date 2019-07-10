@@ -110,3 +110,69 @@ VALUES
 (2020, 1, '10', '1FABP13P4WW153074', 1, 1, 43000, null, 1, 2, 1, 29),
 (2013, 1, '80,000', '2C3ED46F8RH290823', 0, 0, 17000, 16000, 2, 3, 3, 30),
 (2010, 0, '120,000', '3VWRF31KX6M636001', 0, 0, 12000, 10000, 2, 1, 5, 31);
+
+INSERT INTO PurchaseTypes
+(PurchaseType)
+VALUES
+('Bank Finance'),
+('Cash'),
+('Dealer Finance');
+
+INSERT INTO AdminLogins
+(UserName, Password)
+VALUES
+('', ''),
+('', ''),
+('', '');
+
+INSERT INTO SalesLogins
+(UserName, Password)
+VALUES
+('', ''),
+('', ''),
+('', ''),
+('', ''),
+('', ''),
+('', '');
+
+INSERT INTO Users
+(UserRole, EmployeeName, IsDisabled)
+VALUES
+('', ''),
+('', ''),
+('', ''),
+('', ''),
+('', ''),
+('', ''),
+('', ''),
+('', ''),
+('', '');
+
+INSERT INTO CarPurchases
+(PurchaseDate, SalesRep, SoldPrice)
+VALUES
+( , '', ),
+( , '', ),
+( , '', ),
+( , '', ),
+( , '', );
+
+INSERT INTO Customers
+(PhoneNumber, Message, StreetAddress, SecondAddress, City, State, ZipCode)
+VALUES
+('', '', '', '', '', '', ''),
+('', '', '', '', '', '', ''),
+('', '', '', '', '', '', ''),
+('', '', '', '', '', '', ''),
+('', '', '', '', '', '', '');
+
+INSERT INTO Emails
+(Email)
+VALUES
+(''),
+(''),
+(''),
+(''),
+(''),
+(''),
+('');
