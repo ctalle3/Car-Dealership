@@ -163,6 +163,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BLL\GuildCarsManager.cs" />
+    <Compile Include="BLL\GuildCarsManagerFactory.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -172,10 +174,19 @@
       <DependentUpon>201907100051399_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Data\Car.cs" />
+    <Compile Include="Models\Data\CarPurchase.cs" />
+    <Compile Include="Models\Data\Customer.cs" />
+    <Compile Include="Models\Data\Email.cs" />
     <Compile Include="Models\Identity\AppRole.cs" />
     <Compile Include="Models\Identity\AppUser.cs" />
     <Compile Include="Models\Identity\CarDealershipDbContext.cs" />
+    <Compile Include="Models\Interfaces\IGuildCarRepository.cs" />
     <Compile Include="Models\LoginVM.cs" />
+    <Compile Include="Models\Data\MakeModel.cs" />
+    <Compile Include="Models\Data\Users.cs" />
+    <Compile Include="Models\Repositories\GuildCarRepositoryMock.cs" />
+    <Compile Include="Models\Repositories\GuildCarRepositoryProd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
