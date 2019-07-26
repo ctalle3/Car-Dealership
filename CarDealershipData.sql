@@ -87,7 +87,7 @@ VALUES
 (2019, 1, 50, '3C63R3GT5DG540067', 0, 1, 40000, 37000, 3, 7, 1, 6),
 (2012, 1, 130000, 'JAACH15L6H5473938', 0, 0, 10000, null, 4, 8, 2, 7),
 (2019, 1, 250, '1FMEU75E56UB27055', 1, 1, 48000, null, 4, 4, 3, 8),
-(2005, 1, 180000, '2D4GZ57256H180849', 0, 0, 2000, 15000, 4, 2, 4, 9),
+(2005, 1, 180000, '2D4GZ57256H180849', 0, 0, 2000, 1500, 4, 2, 4, 9),
 (2020, 0, 5, '1BAADCSA4LF059919', 1, 1, 60000, null, 2, 3, 5, 10),
 (2020, 1, 0, 'WDBRN47J92A180928', 1, 1, 52000, 50000, 2, 1, 1, 11),
 (2016, 1, 65000, '2C3KA53G46H157079', 0, 0, 20000, 18000, 3, 5, 2, 12),
@@ -137,17 +137,18 @@ VALUES
 ( '2019-01-01', 40000, 29, 3, 3),
 ( '2019-05-05', 6000, 25, 3, 2);
 
+-- insert email data
 INSERT INTO Customers
-(Name, PhoneNumber, Message, StreetAddress, SecondAddress, City, State, ZipCode, CarPurchaseId)
+(Name, PhoneNumber, Email, Message, StreetAddress, SecondAddress, City, State, ZipCode, CarPurchaseId)
 VALUES
 ('Jacob Jenkins','2705551010', 'Thank you for the new car Amy!', '200 Frank St', null, 'Louisville', 'KY', '40202', 1),
 ('Chris Coolidge','5025552222', 'Love this truck!', '103 Market St', 'Apt 300', 'Louisville', 'KY', '40202', 2),
 ('Tom Timber','8595555505', null, '600 Rockford Lane', null, 'Louisville', 'KY', '40202', 3),
 ('Patty Phillips','5025552323', 'Best ride I''ve ever had.', '88 Bardstown Rd', null, 'Louisville', 'KY', '40202', 4),
 ('Brenda Beau','5025554545', null, '929 Taylorsville Rd', null, 'Louisville', 'KY', '40202', 5);
-
-INSERT INTO Emails
-(EmailAddress, EmailText)
+-- insert name and phone number data
+INSERT INTO Messages
+(Name, PhoneNumber, EmailAddress, Message)
 VALUES
 ('pallen@yahoo.com', 'I''m interested in looking at the Silverado. Please contact me at 502-555-1990.'),
 ('rjenkins99@gmai.com', 'Please answer your phones. I''ve been calling all day.'),

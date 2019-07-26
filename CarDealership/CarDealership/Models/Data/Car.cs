@@ -16,6 +16,7 @@ namespace CarDealership.Models
         public bool IsNew { get; set; }
         public decimal MSRP { get; set; }
         public decimal SalePrice { get; set; }
+        // change foreign keys to id
         public string InteriorColor { get; set; }
         public string ExteriorColor { get; set; }
         public string BodyStyle { get; set; }

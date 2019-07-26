@@ -11,6 +11,7 @@ namespace CarDealership.Models
         public DateTime PurchaseDate { get; set; }
         public string SalesRep { get; set; }
         public decimal SoldPrice { get; set; }
+        // change foreign key to id
         public string PurchaseType { get; set; }
     }
 }
